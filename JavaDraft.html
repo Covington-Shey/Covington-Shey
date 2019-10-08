@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Java Fluency</title>
+
+<script>
+
+//use if statements to determine letter grade.
+function loops(grade)
+{
+   let letterGrade;
+   if(grade < 70) {
+      letterGrade = "D";
+   } else if(grade < 80) {
+      letterGrade= "C";
+   } else if(grade < 90) {
+      letterGrade = "B";
+   } else if(grade <= 100) {
+      letterGrade = "A";
+   }
+   return letterGrade;
+}
+
+function listGrades(yourGrade)
+{
+//an array with objects of all the other students. 
+//Object for the user can later be made to inculde the actual name and grade
+// but is left as just "user" and "unknown" for now. 
+   let classGrades = [
+      {
+      person: "Allison", 
+      class: "9th",
+      grade: 93
+      },
+      {
+      person: "Tom",
+      class: "10th",
+      grade: 87
+      },
+      {
+      person: "Cassie",
+      class: "8th",
+      grade: 75
+      },
+      {
+      person: "user",
+      class: "unknown",
+      grade: yourGrade
+      }]
+    
+// create the var list to hold all of the grades in the class  
+   let list= "";
+   for(i=0; i < classGrades.length; i++)
+   {
+      list += classGrades[i].grade + " ";
+   }
+      
+   return list;
+}
+
+function main()
+{
+   var myGrade = parseFloat(document.getElementById("inputGrade").value);
+
+   //call the loops function to determine what your letter grade is
+   let letterGrade = loops(myGrade);
+
+   //call the listGrades function to get the list of all the grades in the class.
+   let list = listGrades(myGrade);
+
+   document.getElementById("output").innerHTML = letterGrade;
+   document.getElementById("outputdiv").innerHTML = list;
+}
+
+</script>
+</head>
+
+<body>
+Enter your grade:
+<input type="text" id="inputGrade">
+<button type="button" onclick="main()">Determine Letter Grade and Compare with Class</button>
+<div id="output"></div>
+<div id="outputdiv"></div>
+</body>
+</html>
