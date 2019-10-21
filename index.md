@@ -1,1 +1,3 @@
-whatever i do what i want 
+Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays
+Object Creation Functions, Inheritance, Properties, Methods, Instantiation
+JSON Parse, Stringify
