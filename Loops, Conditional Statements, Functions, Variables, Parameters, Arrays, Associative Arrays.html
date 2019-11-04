@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays </title>
+	<script type="text/javascript">
+	function countSheep()
+	{
+		var sheep = "";
+		for (var i = 0; i <= 100; i++)
+		{
+			sheep += i + ", ";
+		}
+		document.getElementById("outputSheep").innerHTML = sheep;
+	}
+
+	function countSheepAgain()
+	{
+		var sheep = "";
+		var i = 0;
+		while (i <= 100)
+		{
+			sheep += i + ", ";
+			i++;
+		}
+		document.getElementById("outputSheepAgain").innerHTML = sheep;
+	}
+
+	function countSheepLastTime()
+	{
+		var sheep = "";
+		var i = 0;
+		do
+		{
+			sheep += i + ", ";
+			i++;
+		} 
+		while (i <= 100);
+
+	document.getElementById("outputSheepLastTime").innerHTML = sheep;
+	}
+
+	function getInput()
+	{
+		var numSheep = parseFloat(document.getElementById("inputSheep").value);
+		return numSheep;
+	}
+
+	function shouldCountSheep(numSheep)
+	{
+		var numSheep = getInput();
+		if ((numSheep <= 100) && (numSheep >= 0))
+			document.getElementById("outputCount").innerHTML = "Billy should count " + numSheep + " sheep";
+		else
+			document.getElementById("outputCount").innerHTML = "Let's try giving Billy a different number of sheep to count thats within his abilities."; 
+	}
+
+	function getSheepNames()
+	{
+		var sheepNames = ["Harry", "Bob", "Joe"];
+		document.getElementById("outputNames").innerHTML = sheepNames;
+	}
+
+	function getSheepAge()
+	{
+		var sheepAges = { "Harry": 3, "Bob": 5, "Joe": 2};
+		var output = " ";
+		for(var key in sheepAges)
+		{
+			var value = sheepAges[key];
+			output += key + " is " + value + '<br>';
+		}
+		document.getElementById("outputAge").innerHTML = output;
+	}
+	</script>
+</head>
+<body>
+<h1>Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays </h1>
+<p>First, let's take a look at some different kinds of loops</p>
+<p>Here we have a For loop that will count 100 sheep for Billy while he falls asleep when we click the button</p>
+<button type="button" onclick="countSheep()">Count Sheep</button>
+<div id="outputSheep"></div>
+<p>Why don't we try counting those sheep with a while loop?</p>
+<button type="button" onclick="countSheepAgain()">Count Sheep Again</button>
+<div id="outputSheepAgain"></div>
+<p>We could even count his sheep useing a do while loop to make sure we don't forget that first sheep ;) </p>
+<button type="button" onclick="countSheepLastTime()">Count Sheep One More Time</button>
+<div id="outputSheepLastTime"></div>
+<p>Let's have Billy count the sheep now! How many sheep should we have Billy count?</p>
+<input type="text" name="inputSheep" id="inputSheep">
+<button type="button" onclick="shouldCountSheep()">How many sheep should Billy Count?</button>
+<div id="outputCount"></div>
+<p>Why don't we see what Billy named the sheep by using an array?</p>
+<button type="button" onclick="getSheepNames()">Get Sheep Names</button>
+<div id="outputNames"></div>
+<p>How old are each of these sheep? Lets use an associative array to find out!</p>
+<button type="button" onclick="getSheepAge()">Get Sheep Ages</button>
+<div id="outputAge"></div>
+</body>
+</html>
