@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object Creation Functions, Inheritance, Properties, Methods, Instantiation</title>
+	<style type="text/css">
+		p { font-size: 18px;
+		 }
+	</style>
+<script type="text/javascript">
+	function useObject()
+	{
+		var dog = {breed: "pug", size: "toy", color: "black"};
+		document.getElementById("outputObject").innerHTML = "<br>The breed of dog is: " + dog.breed;
+	}
+	//Global variable of dog with a method inside
+	var dog = {breed: "pug", size: "toy", color: "black", fullName: function(){document.getElementById("outputFullName").innerHTML = "His full name is: Sir Maximus de Puggimus <br>He hails from the original breed of " + this.breed;}};
+
+	function workInheritance()
+	{
+		//parent class
+		class size { constructor(size) { this.dogSize = size;}
+		tellSizeDog() {
+			return 'This dog is a ' + this.dogSize;
+		}
+	    }
+
+	    //child class that is inheriting from parent
+	    class dog extends size {
+	    	constructor(size, breed) {
+	    		super(size);
+	    		this.typeDog = breed;
+	    }
+
+	    show(){
+	    	return this.tellSizeDog() + " " + this.typeDog;
+	    }
+		}
+
+	    mydog = new dog("toy", "pug");
+	    document.getElementById("outputInheritance").innerHTML = mydog.show();
+	}
+
+	function Dog(size, breed, color) {
+		this.size = size;
+		this.breed = breed;
+		this.color = color;
+	}
+
+	function doInstantiation() {
+		var myDog = new Dog("toy", "pug", "black");
+		var yourDog = new Dog("miniture", "corgi", "brown and white");
+		document.getElementById("outputInstantiation").innerHTML = "My dog is a " + myDog.size + " " + myDog.breed + "<br>Your dog is a " + yourDog.size + " " + yourDog.breed; 
+	}
+</script>
+</head>
+<body>
+	<h1> Object Creation Functions, Inheritance, Properties, Methods, Instantiation</h1>
+	<p>So what is an Object? Well it can loosly be defined as an unorder collection of related data in the form of "key: value" pairs. Basically, an object is an associate array.</p><br>
+
+	<p>Lets take a look! When we click the button, it will output one of the values from our object "dog".</p>
+	<button type="button" onclick="useObject()">Click for Dog Breed</button><div id="outputObject"></div><br>
+
+	<p>How about we use a method or a function that has been put in as one of the values in our object "dog" to output the dogs' name and breed.</p>
+	<button type="button" onclick="dog.fullName()">Get Full Name</button><br>
+	<div id="outputFullName"></div><br>
+
+	<p>Lets work with some inheritance now to output the dog size and breed.</p>
+	<button type="button" onclick="workInheritance()">Lets go</button>
+	<div id="outputInheritance"></div><br>
+
+	<p>Now for some instantiation.</p>
+	<button type="button" onclick="doInstantiation()">Lets instantiation</button>
+	<div id="outputInstantiation"></div>
+</body>
+
+</body>
+</html>
