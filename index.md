@@ -2,7 +2,7 @@
 
 2. [Object Creation Functions, Inheritance, Properties, Methods, Instantiation](https://Covington-Shey.github.io/Object-Creation-Functions-Inheritance-Properties-Methods-Instantiation.html)
 
-3. JSON Parse, Stringify
+3. [JSON Parse, Stringify](https://Covington-Shey.github.io/JSON-Parse-Stringify.html)
 
 4. Using XMLHTTPRequest to Consume a JSON Web Service
 
