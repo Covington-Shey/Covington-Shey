@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON-Parse-Stringify</title>
+	<script type="text/javascript">
+		function string()
+		{
+			var dogs = [{breed: "pug", size: "toy", color: "black"}, {breed: "corgi", size: "miniture", color: "brown and white"}, {breed: "husky", size: "normal", color: "grey and white"}];
+			//stringify
+			const stringifyDogs = JSON.stringify(dogs);
+			document.getElementById("outputStringify").innerHTML = stringifyDogs;
+			//parse
+			const parsedDogs = JSON.parse(stringifyDogs);
+			document.getElementById("outputParse").innerHTML = parsedDogs;
+		}
+	</script>
+</head>
+<body>
+	<h1>JSON-Parse-Stringify</h1>
+	<p>Lets stringify!</p>
+	<button type="button" onclick="string()">stringify/parse</button>
+	<div id="outputStringify"></div><br>
+	<p>Here is the parse!</p>
+	<div id="outputParse"></div>
+
+</body>
+</html>
