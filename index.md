@@ -10,7 +10,7 @@
 
 6. [DOM Manipulation Using createElement, appendChild, insertBefore, removeChild, etc.](https://Covington-Shey.gethub.io/DOM-manipulation.html)
 
-7. Manipulating CSS Class Properties Using JavaScript
+7. [Manipulating CSS Class Properties Using JavaScript](https://Covington-Shey.github.io/CSS-manipulation-with-javascript.html)
 
 8. Creating CSS3 Transitions and Animations in CSS and triggering them with JavaScript
 
