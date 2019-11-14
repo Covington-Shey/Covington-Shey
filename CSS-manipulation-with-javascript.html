@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Manipulation using JavaScript</title>
+	<style type="text/css">
+		body {
+  background-color: pink;
+  font-size: 20px;
+  color: white;
+}
+
+	</style>
+	<script type="text/javascript">
+		//change the color of p1 to blue
+		function changeP1()
+		{
+            document.getElementById("p1").style.color = "blue";
+       }
+
+//change the background color of p2 to red
+function changeP2()
+{
+document.getElementById("p2").style.background = "red"; 
+}
+
+/* How do have events that cause changes? */
+//Lets look at the HTML 
+
+
+	</script>
+</head>
+<body>
+
+  <p style="color:lightblue;">Welcome!</p>
+  
+  <p id="p1">Howdy y'all!</p>
+  
+  <p id="p2">Hello everyone!</p>
+  
+  <p id="p3">How are you today?</p>
+  
+  <button type="button" onclick="document.getElementById('p3').style.color = 'green'">Click Me!</button>
+  <button type="button" onclick="changeP1()">changeP1</button>
+  <button type="button" onclick="changeP2()">changeP2</button>
+
+</body>
+</html>
