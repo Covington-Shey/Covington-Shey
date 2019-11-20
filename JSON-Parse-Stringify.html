@@ -9,18 +9,22 @@
 			//stringify
 			const stringifyDogs = JSON.stringify(dogs);
 			document.getElementById("outputStringify").innerHTML = stringifyDogs;
-			//parse
-			const parsedDogs = JSON.parse(stringifyDogs);
-			document.getElementById("outputParse").innerHTML = parsedDogs[0];
+		}
+		function parse()
+		{
+		        var dogsString= '{"breed":"pug","size":"toy","color":"black"}';
+			var parsedDogs = JSON.parse(dogsString);
+			document.getElementById("outputParse").innerHTML = parsedDogs.color + " " + parsedDogs.size + " " + parsedDogs.breed;
 		}
 	</script>
 </head>
 <body>
 	<h1>JSON-Parse-Stringify</h1>
 	<p>Lets stringify!</p>
-	<button type="button" onclick="string()">stringify/parse</button>
+	<button type="button" onclick="string()">Stringify</button>
 	<div id="outputStringify"></div><br>
 	<p>Here is the parse!</p>
+	<button type= "button" onclick= "parse()">Parse</button>
 	<div id="outputParse"></div>
 
 </body>
