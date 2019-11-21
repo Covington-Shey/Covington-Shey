@@ -8,7 +8,7 @@
 
 5. Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects
 
-6. [DOM Manipulation Using createElement, appendChild, insertBefore, removeChild, etc.](https://Covington-Shey.gethub.io/DOM-manipulation.html)
+6. [DOM Manipulation Using createElement, appendChild, insertBefore, removeChild, etc.](https://Covington-Shey.gethub.io/DOM)
 
 7. [Manipulating CSS Class Properties Using JavaScript](https://Covington-Shey.github.io/CSS-manipulation-with-javascript.html)
 
