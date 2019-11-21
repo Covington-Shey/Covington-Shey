@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM Manipulation</title>
+  <style type="text/css">
+    h1 {
+  text-align: center;
+}
+table {
+  margin: auto;
+}
+td {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  border: 1px solid black;
+}
+  </style>
+  <script type="text/javascript">
+    function getPokemon()
+{
+var img= document.createElement('img');
+  img.src="https://media.pokemoncentral.it/wiki/thumb/0/0b/Artwork133_LGPE.png/200px-Artwork133_LGPE.png";
+  document.getElementById("myPokemon").appendChild(img);
+}
+function pokemonDown()
+{
+  var charmander = document.getElementById("wild");
+  
+  charmander.removeChild(charmander.childNodes[0]);
+}
+function getPokemonFirst()
+{
+  var img= document.createElement('img');
+  img.src="http://images.clipartpanda.com/anime-20clip-20art-571500llijh4k2t7.jpg";
+  var first = document.getElementById("wilder");
+  first.insertBefore(img, first.childNodes[0]);
+}
+  </script>
+  </head>
+  <body>
+    <h1>Welcome to the DOM Manipluation Example!</h1>
+    
+    <table>
+      <tr>
+        <td>My Pokemon</td>
+        <td>Wild Pokemon</td>
+        <td>Wild Pokemon</td>
+      <tr>
+        <td id="myPokemon" class="pokemon"><img src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png"></td>
+        <td id="wild"><img src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png"</td>
+        <td id="wilder"><img src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png"></td>
+      </tr>
+    </table>
+    <button type="button" onclick="getPokemon()">Go more Pokemon!</button>
+    <button type="button" onclick="pokemonDown()">Fight!</button>
+    <button type="button" onclick="getPokemonFirst()">Final Player</button>
+    </body>
+	  </html>
