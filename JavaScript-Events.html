@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Events</title>
+	<style type="text/css">
+		div {
+			font-size: 11px;
+		}
+
+		.box {
+			height: 80px;
+			width: 80px;
+			margin: 50px auto;
+			border-radius: 5px;
+		}
+
+		#box1 {
+			background-color: pink;
+		}
+
+		#box2 {
+			background-color: red;
+		}
+
+		#box3 {
+			background-color: green;
+			position: relative;
+		}
+
+		#box4 {
+			background-color: blue;
+		}
+		
+	</style>
+	<script type="text/javascript">
+		function clickIt() 
+		{
+			document.getElementById('box1').style.backgroundColor = 'lightblue';
+		}
+
+		function mouseEnter() {
+			document.getElementById('box2').style.color = 'white';
+		}
+
+		function mouseLeave() {
+			document.getElementById('box2').style.color = 'black';
+		}
+
+		function animationTrigger() 
+		{
+			var elem = document.getElementById("box3");
+		    var pos= 0;
+			var id = setInterval(frame, 10);
+			function frame() 
+			{
+				if (pos == 200) {
+					clearInterval(id);
+				} else {
+					pos++;
+					elem.style.left = pos + "px";
+				}
+			}
+
+		}
+
+		function rotate(){
+		document.getElementById("box4").style.WebkitTransform = "rotate(20deg)";
+		document.getElementById("box4").style.msTransform = "rotate(20deg)";
+		document.getElementById("box4").style.transform = "rotate(20deg)";
+	}
+
+	function alerts() {
+		alert("Page is loaded");
+	}
+	</script>
+</head>
+<body onload="alerts()">
+	<h1>JavaScript Events</h1>
+	<p>That alert means that the page finished loading :)</p>
+	<div class="box" id="box1" onclick="clickIt()">Make it Blue! *Click me</div>
+	<div class="box" id="box2" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">Turn white when mouse enters and back to black when mouse leaves</div>
+	<div class="box" id="box3" onclick="animationTrigger()">Click me to slide right</div>
+	<div class="box" id="box4" ontouchstart="rotate()">Touch me to make me rotate *touch screen required</div>
+
+</body>
+</html>
