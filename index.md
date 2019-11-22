@@ -14,7 +14,7 @@
 
 8. [Creating CSS3 Transitions and Animations in CSS and triggering them with JavaScript](https://Covington-Shey.github.io/CSS-Animation-Transform-Transition-Using-JavaScript.html)
 
-9. Standard JavaScript Events Including those for Mobile Devices ( Ex. onTouchBegin, onLoad, etc.) and Animation and Transition Events
+9. [Standard JavaScript Events Including those for Mobile Devices ( Ex. onTouchBegin, onLoad, etc.) and Animation and Transition Events](https://Covington-Shey.github.io/JavaScript-Events.html)
 
 10. HTML5 Tags - Video, Audio, and Canvas
 
