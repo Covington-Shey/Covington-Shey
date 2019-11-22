@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animations, Transform, and Transition using JavaScript</title>
+	<style type="text/css">
+div {
+	font-size: 11px;
+}
+
+
+.box {
+  border-radius: 5px;
+  height: 40px;
+  margin: 50px auto;
+  width: 80px;
+
+}
+
+#box1 {
+  background-color: pink;
+}
+
+#box2 {
+	background-color: blue;
+	transition: all 3s;
+}
+
+#box3 {
+	background-color: green;
+	position: relative;
+}
+
+</style>
+<script type="text/javascript">
+	function rotate(){
+		document.getElementById("box1").style.WebkitTransform = "rotate(20deg)";
+		document.getElementById("box1").style.msTransform = "rotate(20deg)";
+		document.getElementById("box1").style.transform = "rotate(20deg)";
+	}
+
+	function transitionSize() {
+		document.getElementById("box2").style.WebkitTransform = "scale(2)";
+		document.getElementById("box2").style.msTransform = "scale(2)";
+		document.getElementById("box2").style.transform = "scale(2)";
+	}
+
+	function slide() {
+		var elem = document.getElementById("box3");
+		var pos= 0;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (pos == 200) {
+				clearInterval(id);
+			} else {
+				pos++;
+				elem.style.left = pos + "px";
+			}
+		}
+	}
+</script>
+</head>
+<body>
+<h1>CSS Animations</h1>
+<div class="box" id="box1">When "Button 1" is clicked I rotate</div>
+<button type="button" onclick="rotate()">Button 1</button>
+
+<div class="box" id="box2">When "Button 2" is clicked I double in size over 3 seconds</div>
+<button onclick="transitionSize()">Button 2</button>
+
+<div class="box" id="box3">When "Button 3" is clicked I slide to the left</div>
+<button onclick="slide()">Button 3</button>
+</body>
+</html>
