@@ -12,7 +12,7 @@
 
 7. [Manipulating CSS Class Properties Using JavaScript](https://Covington-Shey.github.io/CSS-manipulation-with-javascript.html)
 
-8. Creating CSS3 Transitions and Animations in CSS and triggering them with JavaScript
+8. [Creating CSS3 Transitions and Animations in CSS and triggering them with JavaScript](https://Covington-Shey.github.io/CSS-Animation-Transform-Transition-Using-JavaScript.html)
 
 9. Standard JavaScript Events Including those for Mobile Devices ( Ex. onTouchBegin, onLoad, etc.) and Animation and Transition Events
 
