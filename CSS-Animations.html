@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Animations</title>
+	<style type="text/css">
+div {
+	font-size: 11px;
+}
+.box {
+  border-radius: 5px;
+  height: 40px;
+  margin: 50px auto;
+  width: 80px;
+}
+
+.box1 {
+  background-color: pink;
+  animation-name: colorChange;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.box2 {
+	background-color: blue;
+	animation: slide 5s infinite alternate;
+}
+
+.box3 {
+	background-color: green;
+	animation: toTheLeft 2s 6 alternate;
+}
+
+.box4 {
+	background-color: yellow;
+	animation: manyColorChanges 4s infinite alternate;
+}
+
+@keyframes colorChange {
+  from {background-color: pink;}
+  to {background-color: red;}
+}
+
+@keyframes slide {
+	from {width: 80px}
+	to {width: 120px;}
+}
+
+@keyframes toTheLeft {
+	from {border-radius: 5px;}
+	to {border-radius: 20px;}
+}
+
+@keyframes manyColorChanges {
+	0% {background-color: yellow;}
+	50% {background-color: orange;}
+	100% {background-color: red;}
+}
+
+</style>
+</head>
+<body>
+<h1>CSS Animations</h1>
+<div class="box1 box">I'm animated to turn from pink to red infinitely</div>
+<div class="box2 box">I'm animated to stretch and then go back infinitely</div>
+<div class="box3 box">I'm animated to change my border radius 6 times</div>
+<div class="box4 box">I'm animated to change color from yellow to oragne and then red infinitely</div>
+</body>
+</html>
