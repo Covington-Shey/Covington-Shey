@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Tranforms</title>
+    <style type="text/css">
+    	div {
+  font-size: 11px;
+}
+
+.box {
+  border-radius: 5px;
+  height: 40px;
+  margin: 50px auto;
+  width: 80px;
+}
+
+.box1:hover {
+  transform: scale(2);
+}
+.box2:hover {
+  transform: rotate(20deg);
+}
+.box3:hover {
+  transform: translate(120px, 50%);
+}
+
+.box1 {
+  background: red;
+}
+
+.box2 {
+  background: green;
+}
+
+.box3 {
+  background: pink;
+}
+    </style>
+  </head>
+  <body>
+    <h1>CSS Transforms</h1>
+        <div class ="box1 box">Hover to change the size</div>
+        <div class="box2 box">Hover to rotate</div>
+      <div class="box3 box">Hover to translate</div>
+  </body>
+</html>
