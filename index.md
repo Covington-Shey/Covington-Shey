@@ -18,8 +18,8 @@
 
 10. HTML5 Tags - Video, Audio, and Canvas
 
-11. Designing, Defining and Triggering CSS3 Transitions without Custom Libraries
+11. [Designing, Defining and Triggering CSS3 Transitions without Custom Libraries]
 
-12. Designing, Defining, and Triggering CSS3 Transforms without Custom Libraries
+12. [Designing, Defining, and Triggering CSS3 Transforms without Custom Libraries](https://Covington-Shey.github.io/CSS-Transforms.html)
 
 13. Designing, Defining and Triggering CSS3 Animations without Custom Libraries
