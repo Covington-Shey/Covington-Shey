@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Transitions</title>
+    <style type="text/css">
+    	div {
+  font-size: 11px;
+}
+
+.box {
+  border-radius: 5px;
+  height: 40px;
+  margin: 50px auto;
+  width: 80px;
+}
+
+.box1:hover {
+  transform: scale(2);
+}
+.box2:hover {
+  transform: rotate(20deg);
+}
+.box3:hover {
+  transform: translate(120px, 50%);
+}
+.box4:hover {
+  transform: scale(2);
+}
+.box5:hover {
+  transform: scale(2);
+}
+.box6:hover {
+  transform: scale(2);
+}
+.box7:hover {
+  transform: scale(2);
+}
+
+.box1 {
+  background: red;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.box2 {
+  background: green;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+}
+
+.box3 {
+  background: pink;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.box4 {
+  background: blue;
+  -webkit-transition: all 2s linear;
+  -moz-transition: all 2s linear;
+  -ms-transition: all 2s linear;
+  -o-transition: all 2s linear;
+  transition: all 2s linear;
+}
+.box5 {
+  background: yellow;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.box6 {
+  background: orange;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+.box7 {
+  background: purple;
+  -webkit-transition: all 2s 1s;
+  -moz-transition: all 2s 1s;
+  -ms-transition: all 2s 1s;
+  -o-transition: all 2s 1s;
+  transition: all 2s 1s;
+}
+    </style>
+  </head>
+  <body>
+    <h1>CSS Transforms</h1>
+      <div class ="box1 box">Hover to change the size for 1 sec</div>
+      <div class="box2 box">Hover to rotate for 2 sec</div>
+      <div class="box3 box">Hover to translate for 0.5 sec</div>
+      <div class="box4 box">Hover for linear size change</div>
+      <div class="box5 box">Hover for ease size change</div>
+      <div class="box6 box">Hover for ease-in-out size change</div>
+      <div class="box7 box">Hover for delayed size change</div>
+  </body>
+</html>
