@@ -22,4 +22,4 @@
 
 12. [Designing, Defining, and Triggering CSS3 Transforms without Custom Libraries](https://Covington-Shey.github.io/CSS-Transforms.html)
 
-13. Designing, Defining and Triggering CSS3 Animations without Custom Libraries
+13. [Designing, Defining and Triggering CSS3 Animations without Custom Libraries](https://Covington-Shey.github.io/CSS-Animations.html)
