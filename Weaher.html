@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function loadWeather() {
+			// get location from user input
+			var city = document.getElementById("city").value;
+			console.log("City is" + city);
+
+			var replaceSpaces = city.split(' ').join('%20');
+			city = replaceSpaces;
+
+			var state= document.getElementById("state").value;
+			console.log("state is" + state);
+
+			var myWeather = new XMLHttpRequest();
+
+			myWeather.open("GET", "https://community-open-weather-map.p.rapidapi.com/weather?id=2172797&units=%22metric%22%20or%20%22imperial%22&mode=xml%2C%20html&q=" + city + "%2C%20" + state, true);
+			myWeather.setRequestHeader("x-rapidapi-host","community-open-weather-map.p.rapidapi.com");
+			myWeather.setRequestHeader("x-rapidapi-key", "9c5c97e57dmshe70e6f5d587f9a4p1462c6jsne6670be05a5d");
+
+
+			myWeather.onreadystatechange = function() {
+				if ((this.status === 200) && (this.readyState === 4))
+				 {
+					var myWeatherData = this.responseText;
+					console.log("All the data: " + myWeatherData);
+					var parsedData = JSON.parse(myWeatherData);
+
+					console.log(parsedData);
+					console.log(parsedData.name);
+					document.getElementById('outputWeather').innerHTML = parsedData.name + " wind speed: " + parsedData.wind.speed;
+				}
+			};
+			
+			myWeather.send(myWeather);
+			
+		}
+	</script>
+</head>
+<body>
+	<p>Weather App!</p>
+	<p>Please input a city and state</p>
+	<input type="text" name="city" id="city">
+	<input type="text" name="state" id="state">
+	<button type="button" onclick="loadWeather()">Load that weather Girl!</button>
+	<div id="outputWeather"></div>
+
+</body>
+</html>
