@@ -16,7 +16,7 @@
 
 9. [Standard JavaScript Events Including those for Mobile Devices ( Ex. onTouchBegin, onLoad, etc.) and Animation and Transition Events](https://Covington-Shey.github.io/JavaScript-Events.html)
 
-10. [HTML5 Tags - Video, Audio, and Canvas](https://Covington-Shey.io/audio-video.html)
+10. [HTML5 Tags - Video, Audio, and Canvas](https://Covington-Shey.github.io/audio-video.html)
 
 11. [Designing, Defining and Triggering CSS3 Transitions without Custom Libraries](https://Covington-Shey.github.io/CSS-Transitions.html)
 
