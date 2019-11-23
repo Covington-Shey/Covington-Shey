@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Audio and Video</title>
+	<style type="text/css">
+		canvas {
+			border: 1px solid black;
+		
+		}
+	</style>
+</head>
+<body>
+	<h1>Audio and Video</h1>
+	<p>Audio</p>
+	<audio src="http://media.blubrry.com/codepen_radio/p/codepen-podcast.s3.amazonaws.com/100.mp3?_=1" controls="controls"></audio>
+	<p>Video</p>
+	<video width="640" height="360" controls="controls">
+		<source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+	</video>
+
+	<p>Embedded Youtube Video</p>
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/bA1ZIyeY91E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	<p>Canvas</p>
+	<canvas>
+	</canvas>
+	<button onclick="slide()">Have the big rectagle in canvas expand to the right with every click</button>
+	<script type="text/javascript">
+		var canvas = document.querySelector('canvas');
+
+		canvas.width = 500;
+		canvas.height = 300;
+
+		var c = canvas.getContext('2d');
+		
+		c.fillRect(150, 0, 50, 50);
+
+		var x = 100;
+
+		function slide() {
+		var elem = c.fillRect(x,100,100,100);
+		var id = setInterval(frame, 100);
+		function frame() {
+			if (x == 500) {
+				clearInterval(id);
+			} else {
+				x++;
+			}
+		}
+	}
+
+		slide();
+	</script>
+</body>
+</html>
