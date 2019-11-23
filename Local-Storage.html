@@ -2,6 +2,22 @@
 <html>
 <head>
 	<title>Local Storage</title>
+	
+</head>
+<body>
+	<h1>Local Storage</h1>
+
+<div id="output"> </div> 
+
+<div id="output2"></div>
+
+<div id="output3"></div>
+
+<div id="output4"></div>
+
+<div id="output5"></div>
+
+<div id="output6"></div>
 	<script type="text/javascript">
 		//check the browser for support
 if (typeof(localStorage) !== "undefined") {
@@ -70,27 +86,10 @@ localStorage.setItem('storeMe', JSON.stringify(me));
 //Retrieve data
 var displayMe = localStorage.getItem('storeMe');
 
-document.getElementById("output7").innerHTML = displayMe;
+document.getElementById("output6").innerHTML = displayMe;
 
 
 	</script>
-</head>
-<body>
-	<h1>Local Storage</h1>
-
-<div id="output"> </div> 
-
-<div id="output2"></div>
-
-<div id="output3"></div>
-
-<div id="output4"></div>
-
-<div id="output5"></div>
-
-<div id="output6"></div>
-
-<div id="output7"></div>
 
 </body>
 </html>
