@@ -4,7 +4,7 @@
 
 3. [JSON Parse, Stringify](https://Covington-Shey.github.io/JSON-Parse-Stringify.html)
 
-4. Using XMLHTTPRequest to Consume a JSON Web Service
+4. [Using XMLHTTPRequest to Consume a JSON Web Service](https://Covington-Shey.github.io/Weaher.html)
 
 5. Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects
 
