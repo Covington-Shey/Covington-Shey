@@ -6,7 +6,7 @@
 
 4. [Using XMLHTTPRequest to Consume a JSON Web Service](https://Covington-Shey.github.io/Weaher.html)
 
-5. Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects
+5. [Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects](https://Covington-Shey.github.io/Local-Storage.html)
 
 6. [DOM Manipulation Using createElement, appendChild, insertBefore, removeChild, etc.](https://Covington-Shey.github.io/DOM-manipulation.html)
 
