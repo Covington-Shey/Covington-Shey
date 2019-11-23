@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Local Storage</title>
+	<script type="text/javascript">
+		//check the browser for support
+if (typeof(localStorage) !== "undefined") {
+//Store data
+localStorage.setItem("fruit", "mango");
+
+//Retrieve data
+document.getElementById("output").innerHTML = localStorage.getItem("fruit");
+} else {
+  console.log("Sorry! No web storage support...");
+}
+
+if (typeof(sessionStorage) !== "undefined") {
+/* Another way to store data */
+sessionStorage.fruit = "banana";
+
+//Retrieve data
+document.getElementById("output2").innerHTML = sessionStorage.fruit;
+} else {
+  console.log("Sorry! No web storage support...");
+}
+
+//What if I want to store a number, not a string?
+if (typeof(localStorage) !== "undefined") {
+//Store data
+localStorage.number = 1;
+
+//Retrieve data
+document.getElementById("output3").innerHTML = localStorage.number;
+} else {
+  console.log("Sorry! No web storage support...");
+}
+
+/*Another way to store it*/
+if (typeof(sessionStorage) !== "undefined") {
+//Store data
+sessionStorage.number = 3;
+
+//Retrieve data
+document.getElementById("output4").innerHTML = sessionStorage.number;
+} else {
+  console.log("Sorry! No web storage support...");
+}
+
+//What if I want to store an array?
+if (typeof(localStorage) !== "undefined") {
+//Store data
+localStorage.cars = ["Truck", "SmartCar", "Sport"];
+
+//Retrieve data
+document.getElementById("output5").innerHTML = localStorage.cars;
+} else {
+  console.log("Sorry! No web storage support...");
+}
+
+
+//What about an object?
+
+
+//Store data
+var me = {favFood: "BBQ",
+            favColor: "Blue",
+            favNumber: 3};
+localStorage.setItem('storeMe', JSON.stringify(me));
+
+//Retrieve data
+var displayMe = localStorage.getItem('storeMe');
+
+document.getElementById("output7").innerHTML = displayMe;
+
+
+	</script>
+</head>
+<body>
+	<h1>Local Storage</h1>
+
+<div id="output"> </div> 
+
+<div id="output2"></div>
+
+<div id="output3"></div>
+
+<div id="output4"></div>
+
+<div id="output5"></div>
+
+<div id="output6"></div>
+
+<div id="output7"></div>
+
+</body>
+</html>
