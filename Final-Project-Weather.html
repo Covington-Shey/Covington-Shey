@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Texas Weather</title>
+	<style type="text/css">
+		body {
+  padding: 0px;
+  margin: 0px;
+  text-align: center; 
+  background-color: blue;
+  color: white;
+}
+	</style>
+	<script type="text/javascript">
+		function loadWeather() {
+			// get location from user input
+			var city = document.getElementById("city").value;
+			console.log("City is" + city);
+			var replaceSpaces = city.split(' ').join('%20');
+			city = replaceSpaces;
+
+			var myWeather = new XMLHttpRequest();
+			myWeather.open("GET", "https://community-open-weather-map.p.rapidapi.com/weather?id=2172797&units=%22metric%22%20or%20%22imperial%22&mode=xml%2C%20html&q=" + city + "%2C%20Texas", true);
+			myWeather.setRequestHeader("x-rapidapi-host","community-open-weather-map.p.rapidapi.com");
+			myWeather.setRequestHeader("x-rapidapi-key", "9c5c97e57dmshe70e6f5d587f9a4p1462c6jsne6670be05a5d");
+			myWeather.onreadystatechange = function() {
+				if ((this.status === 200) && (this.readyState === 4))
+				 {
+					var myWeatherData = this.responseText;
+					console.log("All the data: " + myWeatherData);
+					var parsedData = JSON.parse(myWeatherData);
+					console.log(parsedData);
+					console.log(parsedData.name);
+					document.getElementById('outputWeather').innerHTML = "Wind speed in " + parsedData.name + " is: " + parsedData.wind.speed + "mph";
+				}
+			};
+			
+			myWeather.send(myWeather);
+			
+		}
+	</script>
+</head>
+<body>
+	<h1>Texas Wind Speeds!</h1>
+	<p>They always say, if you don't like the weather in Texas, wait 5 minutes and it'll change!</p>
+	<p>Please input a Texas city (ex. Austin, San Antonio, Dallas, Houston)</p>
+	<input type="text" name="city" id="city">
+	<button type="button" onclick="loadWeather()">Load that weather Girl!</button>
+	<div id="outputWeather"></div>
+
+</body>
+</html>
