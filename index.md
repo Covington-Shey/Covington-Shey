@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+1. [Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays](https://Covington-Shey.github.io/Loops-Conditional-Statements-Functions-Variables-Parameters-Arrays-Associative-Arrays.html)
 
-You can use the [editor on GitHub](https://github.com/sheylc/Covington-Shey.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+2. [Object Creation Functions, Inheritance, Properties, Methods, Instantiation](https://Covington-Shey.github.io/Object-Creation-Functions-Inheritance-Properties-Methods-Instantiation.html)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+3. [JSON Parse, Stringify](https://Covington-Shey.github.io/JSON-Parse-Stringify.html)
 
-### Markdown
+4. [Using XMLHTTPRequest to Consume a JSON Web Service](https://Covington-Shey.github.io/Weaher.html)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+5. [Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects](https://Covington-Shey.github.io/Local-Storage.html)
 
-```markdown
-Syntax highlighted code block
+6. [DOM Manipulation Using createElement, appendChild, insertBefore, removeChild, etc.](https://Covington-Shey.github.io/DOM-manipulation.html)
 
-# Header 1
-## Header 2
-### Header 3
+7. [Manipulating CSS Class Properties Using JavaScript](https://Covington-Shey.github.io/CSS-manipulation-with-javascript.html)
 
-- Bulleted
-- List
+8. [Creating CSS3 Transitions and Animations in CSS and triggering them with JavaScript](https://Covington-Shey.github.io/CSS-Animation-Transform-Transition-Using-JavaScript.html)
 
-1. Numbered
-2. List
+9. [Standard JavaScript Events Including those for Mobile Devices ( Ex. onTouchBegin, onLoad, etc.) and Animation and Transition Events](https://Covington-Shey.github.io/JavaScript-Events.html)
 
-**Bold** and _Italic_ and `Code` text
+10. [HTML5 Tags - Video, Audio, and Canvas](https://Covington-Shey.github.io/audio-video.html)
 
-[Link](url) and ![Image](src)
-```
+11. [Designing, Defining and Triggering CSS3 Transitions without Custom Libraries](https://Covington-Shey.github.io/CSS-Transitions.html)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+12. [Designing, Defining, and Triggering CSS3 Transforms without Custom Libraries](https://Covington-Shey.github.io/CSS-Transforms.html)
 
-### Jekyll Themes
+13. [Designing, Defining and Triggering CSS3 Animations without Custom Libraries](https://Covington-Shey.github.io/CSS-Animations.html)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sheylc/Covington-Shey.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+14. [Final Project](https://Covington-Shey.github.io/final-project.html)
