@@ -1,12 +1,12 @@
-1. [Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays](https://Covington-Shey.github.io/Loops-Conditional-Statements-Functions-Variables-Parameters-Arrays-Associative-Arrays.html)
+1. [Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays](https://https://sheylc.github.io/Covington-Shey.github.io/Loops-Conditional-Statements-Functions-Variables-Parameters-Arrays-Associative-Arrays.html)
 
-2. [Object Creation Functions, Inheritance, Properties, Methods, Instantiation](https://Covington-Shey.github.io/Object-Creation-Functions-Inheritance-Properties-Methods-Instantiation.html)
+2. [Object Creation Functions, Inheritance, Properties, Methods, Instantiation](https://sheylc.github.io/Covington-Shey.github.io/Object-Creation-Functions-Inheritance-Properties-Methods-Instantiation.html)
 
 3. [JSON Parse, Stringify](https://Covington-Shey.github.io/JSON-Parse-Stringify.html)
 
-4. [Using XMLHTTPRequest to Consume a JSON Web Service](https://Covington-Shey.github.io/Weaher.html)
+4. [Using XMLHTTPRequest to Consume a JSON Web Service](https://sheylc.github.io/Covington-Shey.github.io/Weaher.html)
 
-5. [Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects](https://Covington-Shey.github.io/Local-Storage.html)
+5. [Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects](https://sheylc.github.io/Covington-Shey.github.io/Local-Storage.html)
 
 6. [DOM Manipulation Using createElement, appendChild, insertBefore, removeChild, etc.](https://Covington-Shey.github.io/DOM-manipulation.html)
 
